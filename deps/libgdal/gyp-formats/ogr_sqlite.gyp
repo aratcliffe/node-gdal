@@ -6,6 +6,9 @@
 		{
 			"target_name": "libgdal_ogr_sqlite_frmt",
 			"type": "static_library",
+            "link_settings": {
+                             "libraries": ["-lsqlite3"]
+            },
 			"sources": [
 				"../gdal/ogr/ogrsf_frmts/sqlite/ogrsqliteapiroutines.c",
 				"../gdal/ogr/ogrsf_frmts/sqlite/ogrsqlitedatasource.cpp",
